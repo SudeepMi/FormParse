@@ -18,10 +18,12 @@ Laravel Package With JS to handle Ajax From Request.
 4. link form.js to your blade.file
 
 5. After you call ajax function .
-    Call getData(formObject) function. it requires form object as parameter.
-    Call getErrors(response) function to show errors came from laravel.
+    # Call getData(formObject) function. it requires form object as parameter.
+    # Call getErrors(response) function to show errors came from laravel.
+    ------------------------------------------------------------------
         *for this you have to keep same value of id attr. as that of name attr.
                 [ input type='text' name='address' id='address' ]
+    ---------------------------------------------------------------------
         *to show error you have to keep class name with (error-) prepended in same value of name attr.
                 [ span class='error-address']
 ___________________________________________________________________________________________________________
