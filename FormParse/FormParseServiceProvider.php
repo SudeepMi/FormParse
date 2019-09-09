@@ -20,8 +20,8 @@ class FormServiceProvider extends ServiceProvider
     public function boot()
 {
 
-    $jsPath = '/js/form.js';
-    $publicPath = public_path('js/form.js');
+    $jsPath = __DIR__.'/../js/form.js';
+    $publicPath = public_path('assets/js/form.js');
     $this->publishes([
         $jsPath => $publicPath,
     ],'public');
