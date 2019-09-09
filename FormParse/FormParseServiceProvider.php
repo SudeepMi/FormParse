@@ -1,11 +1,11 @@
 <?php
 
-namespace FormParse\Providers;
+namespace FormParse;
 
 
 use Illuminate\Support\ServiceProvider;
 
-class FormParseServiceProvider extends ServiceProvider
+class FormServiceProvider extends ServiceProvider
 {
     /**
      * Register bindings in the container.
@@ -14,14 +14,16 @@ class FormParseServiceProvider extends ServiceProvider
      */
     public function register()
     {
-       
+        //juu
     }
 
     public function boot()
 {
 
+    $jsPath = '/js/form.js';
+    $publicPath = public_path('js/form.js');
     $this->publishes([
-        __DIR__.'/vendor/FormParse/js/form.js' => public_path('js/form.js'),
-    ]);
+        $jsPath => $publicPath,
+    ],'public');
 }
 }

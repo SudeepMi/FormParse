@@ -1,11 +1,9 @@
 <?php
 
-namespace App\Traits;
+namespace FormParse;
 
-use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 use Validator;
-use App\Traits\Box;
 
 trait FormParse
 {
@@ -36,7 +34,7 @@ trait FormParse
 
     protected function getObj(Request $request,$key=null)
     {
-        $box = new Box;
+
         if(!isset($key)){
             $data = $request->except('_token');
               $raw = json_decode($data['data']);

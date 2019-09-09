@@ -1,7 +1,26 @@
 {
-    "name": "sudeep/formparse",
-    "description": "This allows you to parse form data from ajax to laravel request object",
-    "type": "library",
-    "license": "MIT",
-    "require": {}
+    "name": "Sudeep/FormParser",
+    "description": "An easy form parser and management tool for Laravel",
+    "license": ["MIT"],
+    "authors": [
+        {
+            "name": "Sudeep Mishra",
+            "email": "sudeep0599@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/cache": "5.*",
+        "illuminate/config": "5.*",
+        "illuminate/console": "5.*",
+        "illuminate/http": "5.*",
+        "illuminate/pagination": "5.*",
+        "illuminate/support": "5.*",
+        "nesbot/carbon": "~1.20"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sudeep\\FormParser\\": "FormParse"
+        }
+    },
+    "minimum-stability": "stable"
 }
