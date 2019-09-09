@@ -1,6 +1,6 @@
 <?php
 
-namespace FormParse;
+namespace Sudeep\FormParser;
 
 
 use Illuminate\Support\ServiceProvider;
