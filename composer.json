@@ -1,0 +1,7 @@
+{
+    "name": "sudeep/formparse",
+    "description": "This allows you to parse form data from ajax to laravel request object",
+    "type": "library",
+    "license": "MIT",
+    "require": {}
+}
