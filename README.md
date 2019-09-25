@@ -40,6 +40,9 @@ ________________________________________________________________________________
                             setTimeout($(location).attr('href', url),3000); 
                             }
                         }).fail( function(res){
+                            //this will fill last values in filed
+                            values(data)
+                            //this will show errors
                             getErrors(res)
                             })
                     })
